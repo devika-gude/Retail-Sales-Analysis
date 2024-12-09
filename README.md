@@ -14,7 +14,7 @@ This project involves the design and execution of an advanced SQL-based system t
 ---
 #### PROJECT STRUCTURE:
 
-DATABASE SETUP
+## DATABASE SETUP
 
 •	Database Creation: The project begins by setting up a database named retail_db to store all sales-related data.
 
