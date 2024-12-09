@@ -286,7 +286,7 @@ SELECT *  FROM retail_sales;
    - Export the dashboards as images or PDFs for presentations.  
    - Publish the workbook to Tableau Online, Tableau Public, or Tableau Server for broader access.  
 
----
+##
 
 #### Findings
 - **Customer Demographics:** The dataset includes customers from various age groups, with sales distributed across different categories such as Clothing and Beauty.
