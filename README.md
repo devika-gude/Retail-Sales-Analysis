@@ -11,7 +11,7 @@ This project involves the design and execution of an advanced SQL-based system t
 - **High-Value Transaction Identification:** Identify transactions where the total sale exceeds a certain threshold and analyze these high-value transactions to understand their contribution to overall sales.
 - **Time-Based Sales Analysis:** Classify sales transactions into different shifts (morning, afternoon, evening) and analyze how sales vary across different times of the day.
 - **Business Analysis:** Use SQL queries to answer specific business questions, such as identifying top customers, most popular categories, and factors influencing sales performance.
-
+---
 #### PROJECT STRUCTURE:
 
 DATABASE SETUP
