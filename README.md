@@ -1,7 +1,8 @@
 # Retail-Sales-Analysis
 
 This project involves the design and execution of an advanced SQL-based system to analyze retail sales data. The goal is to gain valuable insights into sales performance, customer behavior, product trends, and operational efficiency, which can help drive strategic business decisions.
-***
+
+##
 
 #### OBJECTIVES 
 
@@ -14,7 +15,7 @@ This project involves the design and execution of an advanced SQL-based system t
 ---
 #### PROJECT STRUCTURE:
 
-## DATABASE SETUP
+**DATABASE SETUP**
 
 •	Database Creation: The project begins by setting up a database named retail_db to store all sales-related data.
 
