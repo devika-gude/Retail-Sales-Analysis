@@ -49,3 +49,46 @@ SELECT COUNT(*) FROM retail_sales;
 ```Sql
 SELECT COUNT(DISTINCT customer_id) FROM retail_sales;
 ```
+
+##### 3.FILTERED DATA QUERIES 
+
+- **Total Sales Trend Over Time for a Specific Date Range**
+Query : Retrieve the total sales trend for a specific date range (the year 2022), broken down by month.
+
+```Sql
+SELECT DATE_FORMAT(sale_date, '%Y-%m') AS month,  
+       SUM(total_sale) AS total_sales  
+FROM retail_sales  
+WHERE sale_date BETWEEN '2022-01-01' AND '2022-12-31'  -- filter for the year 2022
+GROUP BY month  
+ORDER BY month;
+```
+
+- **Calculate total sales and orders by category:**
+Query: Retrieves the sum of sales and the total number of orders for each category
+
+```Sql
+SELECT category,  
+       SUM(total_sale) as net_sale,  
+       COUNT(*) as total_orders  
+FROM retail_sales  
+GROUP BY category;
+```
+
+- **Find the average age of customers who purchased items from the 'Beauty' category:**
+Query: Retrieves the sum of sales and the total number of orders for the 'Beauty' category
+
+```Sql
+SELECT ROUND(AVG(age), 2) as avg_age  
+FROM retail_sales  
+WHERE category = 'Beauty';
+```
+
+- **Find all transactions where the total sale is greater than 1000:**
+Query: Retrieves all the transactions where the total sale amount exceeds 1000.
+
+```Sql
+SELECT *  
+FROM retail_sales  
+WHERE total_sale > 1000;
+```
