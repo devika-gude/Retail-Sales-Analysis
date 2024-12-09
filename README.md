@@ -76,7 +76,8 @@ GROUP BY category;
 ```
 
 - **Find the average age of customers who purchased items from the 'Beauty' category:**
-Query: Retrieves the sum of sales and the total number of orders for the 'Beauty' category
+  
+-- Query: Retrieves the sum of sales and the total number of orders for the 'Beauty' category
 
 ```Sql
 SELECT ROUND(AVG(age), 2) as avg_age  
