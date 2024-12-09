@@ -15,10 +15,10 @@ This project involves the design and execution of an advanced SQL-based system t
 ##
 #### PROJECT STRUCTURE:
 
-**DATABASE SETUP**
+##### 1.DATABASE SETUP
 
-•	Database Creation: The project begins by setting up a database named `retail_db` to store all sales-related data.
-•	Table Creation: A table named retail_sales is created to store the sales data. The table structure includes columns for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount.
+- **Database Creation:** The project begins by setting up a database named `retail_db` to store all sales-related data.
+- **Table Creation:** A table named retail_sales is created to store the sales data. The table structure includes columns for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount.
 
 ```sql
 CREATE  DATABASE  retail_db;
@@ -38,3 +38,14 @@ CREATE TABLE retail_sales
 );
 ```
 
+##### 2.DATA RETRIEVAL QUERIES 
+
+- **Counting the total number of transactions in retail_sales:**
+```Sql
+SELECT COUNT(*) FROM retail_sales;
+```
+
+- **Counting the number of distinct customers in retail_sales:**
+```Sql
+SELECT COUNT(DISTINCT customer_id) FROM retail_sales;
+```
